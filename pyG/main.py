@@ -24,7 +24,7 @@ app = Flask(__name__)
 
 # Function Definitions
 
-def test(self, U, y_one_hot, data):
+def test(U, y_one_hot, data):
     """Auto-generated function: test"""
     try:
         response = pytorch_geometricexamples.ogc.LinearNeuralNetwork.test(U, y_one_hot, data)
@@ -41,8 +41,6 @@ def call_test():
 
     # Extract parameters from request body
     
-    self = request_json.get("self")
-    
     U = request_json.get("U")
     
     y_one_hot = request_json.get("y_one_hot")
@@ -50,7 +48,7 @@ def call_test():
     data = request_json.get("data")
     
 
-    return test(self, U, y_one_hot, data)
+    return test(U, y_one_hot, data)
 
 
 if __name__ == "__main__":
