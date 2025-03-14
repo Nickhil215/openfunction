@@ -1,4 +1,0 @@
-markupsafe==2.0.1
-requests
-flask
-functions-framework==1.4.3
