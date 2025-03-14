@@ -13,6 +13,8 @@ import from torch_geometric.utils import torch_geometric.utils.one_hot
 
 import import os.path as osp
 
+import import pytorch_geometric
+
 import import torch_geometric.transforms as T
 
 import from torch_geometric.data import torch_geometric.data.Data
@@ -27,7 +29,7 @@ app = Flask(__name__)
 def test(U, y_one_hot, data):
     """Auto-generated function: test"""
     try:
-        response = pytorch_geometricexamples.ogc.LinearNeuralNetwork.test(U, y_one_hot, data)
+        response = pytorch_geometric.examples.ogc.LinearNeuralNetwork.test(U, y_one_hot, data)
         return jsonify(response.json()), response.status_code
     except Exception as e:
         return jsonify({"error": str(e)}), 500
