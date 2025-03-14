@@ -1,4 +1,4 @@
+markupsafe==2.0.1
 functions-framework==1.4.3
 requests
-markupsafe==2.0.1
 flask
