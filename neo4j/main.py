@@ -3,15 +3,15 @@
 
 from flask import Flask, request, jsonify
 
+from contextlib import contextmanager
+
+from neo4j.docs.source.conf import setup
+
 from neo4j.setup import changed_package_name
 
 from neo4j.testkitbackend.backend import Request
 
 from neo4j.setup import change_project_name
-
-from neo4j.docs.source.conf import setup
-
-from contextlib import contextmanager
 
 import tomlkit
 
