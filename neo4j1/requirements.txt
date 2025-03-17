@@ -1,0 +1,7 @@
+flask
+functions-framework==1.4.3
+markupsafe==2.0.1
+neo4j_python_driver
+neo4j
+tomlkit
+neo4j-python-driver
