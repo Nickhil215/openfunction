@@ -1,0 +1,4 @@
+string
+functions-framework==1.4.3
+flask
+markupsafe==2.0.1
