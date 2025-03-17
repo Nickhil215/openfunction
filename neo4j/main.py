@@ -3,17 +3,17 @@
 
 from flask import Flask, request, jsonify
 
-from neo4j.setup import change_project_name
-
 from neo4j.testkitbackend.backend import Request
-
-from contextlib import contextmanager
-
-from neo4j.setup import changed_package_name
 
 import tomlkit
 
+from neo4j.setup import changed_package_name
+
 from neo4j.docs.source.conf import setup
+
+from neo4j.setup import change_project_name
+
+from contextlib import contextmanager
 
 
 app = Flask(__name__)
