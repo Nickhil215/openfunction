@@ -1,6 +1,6 @@
-numpy>=1.19.5
-flask
-markupsafe==2.0.1
-git+https://github.com/pyg-team/pyg_sphinx_theme.git
-https://download.pytorch.org/whl/cpu/torch-1.13.0%2Bcpu-cp39-cp39-linux_x86_64.whl
 functions-framework==1.4.3
+markupsafe==2.0.1
+https://download.pytorch.org/whl/cpu/torch-1.13.0%2Bcpu-cp39-cp39-linux_x86_64.whl
+git+https://github.com/pyg-team/pyg_sphinx_theme.git
+flask
+numpy>=1.19.5
