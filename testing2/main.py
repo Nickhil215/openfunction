@@ -3,9 +3,9 @@
 
 from flask import Flask, request, jsonify
 
-import requests.sessions
+requests
 
-import requests
+requests.sessions
 
 
 app = Flask(__name__)
