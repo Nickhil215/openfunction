@@ -1,7 +1,7 @@
-functions-framework==1.4.3
-tomlkit
 neo4j
-flask
-neo4j_python_driver
+functions-framework==1.4.3
 neo4j-python-driver
+neo4j_python_driver
+flask
 markupsafe==2.0.1
+tomlkit
