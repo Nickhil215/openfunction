@@ -3,23 +3,23 @@
 
 from flask import Flask, request, jsonify
 
-import os.path as osp
-
-import pytorch_geometric
-
-from torch_geometric.data import torch_geometric.data.Data
-
-from torch_geometric.datasets import torch_geometric.datasets.Planetoid
-
-import torch_geometric.transforms as T
-
-import torch
-
 import torch.nn.functional as F
+
+import os.path as osp
 
 from torch_geometric.utils import torch_geometric.utils.one_hot
 
+from torch_geometric.datasets import torch_geometric.datasets.Planetoid
+
 from torch import torch.Tensor
+
+import torch_geometric.transforms as T
+
+from torch_geometric.data import torch_geometric.data.Data
+
+import pytorch_geometric
+
+import torch
 
 
 app = Flask(__name__)
