@@ -18,26 +18,10 @@ app = Flask(__name__)
 
 # Function Definitions
 
-def add_node(G, node_xml, node_attr, node_pid):
-    """Auto-generated function: add_node"""
-    try:
-        response = networkx.gexf.GEXFReader.add_node(G, node_xml, node_attr, node_pid)
-        return jsonify(response.json()), response.status_code
-    except Exception as e:
-        return jsonify({"error": str(e)}), 500
-
 def add_edge(G, edge_element, edge_attr):
     """Auto-generated function: add_edge"""
     try:
         response = networkx.gexf.GEXFReader.add_edge(G, edge_element, edge_attr)
-        return jsonify(response.json()), response.status_code
-    except Exception as e:
-        return jsonify({"error": str(e)}), 500
-
-def add_node(G, node_xml, graphml_keys, defaults):
-    """Auto-generated function: add_node"""
-    try:
-        response = networkx.graphml.GraphMLReader.add_node(G, node_xml, graphml_keys, defaults)
         return jsonify(response.json()), response.status_code
     except Exception as e:
         return jsonify({"error": str(e)}), 500
@@ -62,14 +46,6 @@ def add_edge(i, p, q):
     """Auto-generated function: add_edge"""
     try:
         response = networkx.flow.networksimplex._DataEssentialsAndFunctions.add_edge(i, p, q)
-        return jsonify(response.json()), response.status_code
-    except Exception as e:
-        return jsonify({"error": str(e)}), 500
-
-def add_node(node_for_adding):
-    """Auto-generated function: add_node"""
-    try:
-        response = networkx.digraph.DiGraph.add_node(node_for_adding)
         return jsonify(response.json()), response.status_code
     except Exception as e:
         return jsonify({"error": str(e)}), 500
@@ -181,23 +157,6 @@ def to_undirected(as_view):
 
 # API Endpoints
 
-@app.route('/add_node', methods=['POST'])
-def call_add_node():
-    request_json = request.get_json(silent=True)
-
-    # Extract parameters from request body
-    
-    G = request_json.get("G")
-    
-    node_xml = request_json.get("node_xml")
-    
-    node_attr = request_json.get("node_attr")
-    
-    node_pid = request_json.get("node_pid")
-    
-
-    return add_node(G, node_xml, node_attr, node_pid)
-
 @app.route('/add_edge', methods=['POST'])
 def call_add_edge():
     request_json = request.get_json(silent=True)
@@ -212,23 +171,6 @@ def call_add_edge():
     
 
     return add_edge(G, edge_element, edge_attr)
-
-@app.route('/add_node', methods=['POST'])
-def call_add_node():
-    request_json = request.get_json(silent=True)
-
-    # Extract parameters from request body
-    
-    G = request_json.get("G")
-    
-    node_xml = request_json.get("node_xml")
-    
-    graphml_keys = request_json.get("graphml_keys")
-    
-    defaults = request_json.get("defaults")
-    
-
-    return add_node(G, node_xml, graphml_keys, defaults)
 
 @app.route('/add_edge', methods=['POST'])
 def call_add_edge():
@@ -272,17 +214,6 @@ def call_add_edge():
     
 
     return add_edge(i, p, q)
-
-@app.route('/add_node', methods=['POST'])
-def call_add_node():
-    request_json = request.get_json(silent=True)
-
-    # Extract parameters from request body
-    
-    node_for_adding = request_json.get("node_for_adding")
-    
-
-    return add_node(node_for_adding)
 
 @app.route('/add_edge', methods=['POST'])
 def call_add_edge():
