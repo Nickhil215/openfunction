@@ -1,18 +1,8 @@
-seaborn
-flask
-networkx>=2.1
-pygraphviz
-gensim
-rdflib
-torch
-graphviz
-tqdm
-markupsafe==2.0.1
 numpy
---pre dgl-cu101
-matplotlib
-pandas
-scikit-learn
-networkx
-requests
+markupsafe==2.0.1
 functions-framework==1.4.3
+heterograp
+collection
+flask
+dgl
+bas
