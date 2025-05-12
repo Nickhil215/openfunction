@@ -1,0 +1,4 @@
+markupsafe==2.0.1
+flask
+plotly.py
+functions-framework==1.4.3
