@@ -1,0 +1,4 @@
+markupsafe==2.0.1
+flask
+i2_bridge
+functions-framework==1.4.3
