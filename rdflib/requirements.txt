@@ -1,0 +1,4 @@
+rdflib
+markupsafe==2.0.1
+flask
+functions-framework==1.4.3
