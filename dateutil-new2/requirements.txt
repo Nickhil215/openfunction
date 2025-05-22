@@ -1,0 +1,6 @@
+markupsafe==2.0.1
+python-dateutil
+flask
+functions-framework==1.4.3
+six
+pytest
